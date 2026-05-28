@@ -16,15 +16,15 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(__dir__) { Dir["{lib,spec}/**/*", "README.md", "LICENSE.txt", "CHANGELOG.md", "Gemfile", ".rspec", "Rakefile"] }
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = ">= 2.1"
-  spec.add_dependency "bigdecimal"
-  spec.add_dependency "logger"
-  spec.add_dependency "ostruct"
+  spec.required_ruby_version = ">= 3.3"
+  spec.add_dependency "bigdecimal", ">= 3.0", "< 5.0"
+  spec.add_dependency "logger", "~> 1.4"
+  spec.add_dependency "ostruct", "~> 0.5"
   spec.add_dependency "faraday", ">= 2.10", "< 3.0"
   spec.add_dependency "virtus", "~> 1.0", ">= 1.0.0"
 
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "byebug"
+  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "byebug", "~> 11.0"
 end

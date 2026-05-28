@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 3.3.4
+  - 3.4.7
+  - 4.0.5
+cache: bundler
+env:
+  CI: true
